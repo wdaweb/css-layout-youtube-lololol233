@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* 除了左側邊欄以外的主體 */
+.main {
+    width: 90%;
+    float: left;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/* 左側選單欄 */
+.aside {
+    width: 80px;
+    height: 920px;
+    float: left;
+    align-items: center;
+    text-align: center;
+    /* display: none; */
+
+}
+
+.aside img {
+    position: relative;
+    text-align: center;
+    left: 10px;
+}
+
+/* 左側選單欄 */
+.aside2 {
+    margin: 0;
+    width: 10%;
+    height: 920px;
+    float: left;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    /* display: inline-block; */
+}
+
+.top {
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.search {
+    width: 500px;
+    height: 30px;
+    margin: -20px 50px 0 100px;
+}
+
+input {
+    outline-style: none;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding-left: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.searchIcon {
+    height: 18px;
+}
+
+#searchBtn {
+    width: 50px;
+    height: 32px;
+    position: relative;
+    left: -55px;
+    top: -3px;
+    border: 1px solid lightgray;
+}
+
+.microphone {
+    display: inline-block;
+    background-color: rgb(239, 238, 238);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -7px;
+    left: -40px;
+}
+
+.microphone img {
+    height: 18px;
+    position: relative;
+    left: 8px;
+    top: 5px;
+}
+
+.microphone:hover {
+    background-color: lightgray;
+    transition-delay: 0.3s;
+    transition-duration: 0.8s;
+}
+
+hr {
+    margin: 10px;
+    width: 1300px;
+}
+
+ul {
+    list-style: none;
+}
+
+.asideLi {
+    width: 180px;
+    height: 50px;
+    position: relative;
+    font-size: 12px;
+    /* text-align: left; */
+}
+
+.asideLi2 {
+    width: 80px;
+    height: 60px;
+    font-size: 12px;
+    /* text-align: left; */
+}
+
+/* 右上角圖標 */
+.bell,
+.avatar {
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+}
+
+.bell {
+    margin-top: 5px;
+}
+
+.asideLi:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.asideLi2:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+
+/* 左側選單的icon */
+.asideLi img {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.asideLi2 img {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* 左側選單的文字 */
+.asideText {
+    position: absolute;
+    bottom: 15px;
+    left: 60px;
+    font-size: 12px;
+}
+
+
+.topBar {
+    /* display: flex; */
+    display: inline-block;
+    margin-left: 0;
+}
+
+.topBarLi {
+    background-color: #f2f2f2;
+    border: rgb(219, 219, 219) 1px solid;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 3px 15px;
+    height: 25px;
+    float: left;
+}
+
+.topBarLi:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.8s;
+}
+
+.topBarLi:focus {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.topBarLi:visited {
+    background-color: black;
+}
+
+.content {
+    background-color: rgb(249, 249, 249);
+    width: 1450px;
+    height: 800px;
+}
+
+.cover {
+    width: 100%;
+}
+
+/* 瀏覽量 */
+.info {
+    font-size: 12px;
+    color: gray;
+}
+
+/* 影片盒子 */
+.coverContent {
+    margin: 10px 7px;
+    width: 320px;
+    float: left;
+}
+
+/* 放大用transform: scale(1.1); */
+.coverContent:hover {
+    transform: scale(1.1);
+    /* margin: 0; */
+    background-color: white;
+    transition-delay: 0.7s;
+    transition-duration: 0.7s;
+    box-shadow: 0px 1px 20px gray;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 左侧导航栏的顶部icon */
+#bar {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+#bar2 {
+    left: 10px;
+    position: relative;
+}
+
+/* youtuber頭像 */
+.profile {
+    border-radius: 50%;
+    height: 30px;
+    position: relative;
+    top: -15px;
+    /* margin-right: 5px; */
+}
+
+/* youtuber資訊 */
+.caption {
+    display: inline-block;
+}
+
+.aside2 {
+    display: none;
+}
+
+#tab1:checked~.aside2 {
+    display: block;
+}
+
+#tab1:checked~.aside {
+    display: none;
+}
+
+#tab2:checked~.aside {
+    display: block;
+}
+
+#tab2:checked~.aside2 {
+    display: none;
+}
+
+#tab1,
+#tab2 {
+    display: none;
+}
+
+/* 水平位移收缩侧边栏动效 */
+/* .aside2{
+    transform:translateX(-300px);
+}
+
+#tab1:checked~.aside2{
+    transform:translateX(-90px);
+    transition-duration: 0.5s;
+}
+#tab1:checked~.aside{
+    transform:translateX(-300px);
+    }
+
+#tab2:checked~.aside{
+    transform:translateX(-5px);
+    transition-duration: 0.5s;
+    }
+#tab2:checked~.aside2{
+        transform:translateX(-300px);
+    } */
+
+
+/* 卷軸樣式 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(175, 173, 173);
+    border-radius: 50px;
+}

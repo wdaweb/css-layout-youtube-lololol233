@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="icon" href="icons/LOGO.ico" type="image/x-icon"/>
+    <style>
+        .swal2-html-container{
+        font-size: 14px !important;
+}
+    </style>
+</head>
+<body>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <input id="tab1" type="radio" name="health">
+        <input id="tab2" type="radio" name="health">
+    <div class="aside">
+        <ul>
+            <li class="asideLi2"><label for="tab1"><img id="bar" src="icons/bars-solid.svg" height="20px;"></label></li>
+            <li class="asideLi2"><img src="icons/house-solid.svg" height="20px;"><br>首頁</li>
+            <li class="asideLi2"><img src="icons/circle-play-regular.svg" height="25px;"><br>播放清單</li>
+            <li class="asideLi2"><img src="icons/compass-regular.svg" height="25px;"><br>探索</li>
+            <li class="asideLi2"><img src="icons/heart-regular.svg" height="25px;"><br>收藏</li>
+        </ul>
+    </div>
+    <div class="aside2">
+        <ul>
+            <li class="asideLi"><label for="tab2"><img id="bar2" src="icons/bars-solid.svg" height="20px;"></label></li>
+            <li class="asideLi"><img src="icons/house-solid.svg" height="20px;"><span class="asideText">首頁</span></li>
+            <li class="asideLi"><img src="icons/circle-play-regular.svg" height="23px;"><span class="asideText">播放清單</span></li>
+            <li class="asideLi"><img src="icons/compass-regular.svg" height="23px;"><span class="asideText">探索</span></li>
+            <li class="asideLi"><img src="icons/heart-regular.svg" height="23px;"><span class="asideText">收藏</span></li>
+            <li class="asideLi"><img src="icons/clock-rotate-left-solid.svg" height="20px;"><span class="asideText">觀看紀錄</span></li>
+            <li class="asideLi"><img src="icons/clock-regular.svg" height="20px;"><span class="asideText">稍後觀看</span></li>
+            <li class="asideLi"><img src="icons/thumbs-up-regular.svg" height="20px;"><span class="asideText">點讚內容</span></li>
+            <li class="asideLi"><hr><p style="margin-left: 30px;margin-top: 20px;">探索</p></li>
+            <li class="asideLi"><img src="icons/plane-solid.svg" height="20px;"><span class="asideText">電影</span></li>
+            <li class="asideLi"><img src="icons/life-ring-solid.svg" height="20px;"><span class="asideText">遊戲</span></li>
+            <li class="asideLi"><img src="icons/microphone-solid.svg" height="20px;"><span class="asideText">音樂</span></li>
+            <li class="asideLi"><img src="icons/fly.svg" height="25px;"><span class="asideText">生活</span></li>
+            <li class="asideLi"><img src="icons/hand-regular.svg" height="20px;"><span class="asideText">美食</span></li>
+            <li class="asideLi"><img src="icons/circle-play-regular.svg" height="23px;"><span class="asideText">體育</span></li>
+            <li class="asideLi"><img src="icons/compass-regular.svg" height="23px;"><span class="asideText">藝術</span></li>
+            <li class="asideLi"><img src="icons/heart-regular.svg" height="23px;"><span class="asideText">旅遊</span></li>
+            <li class="asideLi"><img src="icons/fly.svg" height="25px;"><span class="asideText">生活</span></li>
+            <li class="asideLi"><img src="icons/hand-regular.svg" height="20px;"><span class="asideText">美食</span></li>
+            <li class="asideLi"><img src="icons/circle-play-regular.svg" height="23px;"><span class="asideText">體育</span></li>
+            <li class="asideLi"><img src="icons/compass-regular.svg" height="23px;"><span class="asideText">藝術</span></li>
+            <li class="asideLi"><img src="icons/heart-regular.svg" height="23px;"><span class="asideText">旅遊</span></li>
+        </ul>
+    </div>
+
+    <div class="main">
+    <div class="top">
+        <a href="/index.html"><img class="logo" src="icons/logo.png"></a>
+        <input class="search" type="text" placeholder="搜尋">
+        <button id="searchBtn"> <img class="searchIcon" title="搜尋" src="icons/magnifying-glass-solid.svg"></button>
+        <span class="microphone" ><img title="使用語音搜尋" src="icons/microphone-solid.svg" onclick="showMsg()"></span>
+        <img class="avatar" src="images/unnamed.jpg" height="35px">
+        <img class="bell" src="icons/bell-regular.svg" title="通知" height="25px">
+
+        <hr>
+        <ul class="topBar">
+            <li class="topBarLi" tabindex="0">全部</li>
+            <li class="topBarLi" tabindex="0">合輯</li>
+            <li class="topBarLi" tabindex="0">直播中</li>
+            <li class="topBarLi" tabindex="0">音樂</li>
+            <li class="topBarLi" tabindex="0">遊戲</li>
+            <li class="topBarLi" tabindex="0">烹飪節目</li>
+            <li class="topBarLi" tabindex="0">美妝</li>
+            <li class="topBarLi" tabindex="0">健身</li>
+            <li class="topBarLi" tabindex="0">動作冒險遊戲</li>
+            <li class="topBarLi" tabindex="0">視覺藝術</li>
+            <li class="topBarLi" tabindex="0">卡通</li>
+            <li class="topBarLi" tabindex="0">最新上傳</li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+        <div class="content1">
+        <div class="coverContent"><img class="cover" src="images/hq720.webp">
+            <div class="youtuber">
+                <a href="https://youtu.be/81TDFC1cb2Q">
+            <img class="profile" src="images/profile.jpg"></a>
+            <div class="caption">LINE Bank再拋震撼彈！2%再調降！
+    <div class="info">Sam and Chill<br>觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        <div class="coverContent">
+        <img class="cover" src="images/hq720 (1).webp">
+        <div class="youtuber">
+        <img class="profile" src="images/profile2.jpg">
+        <div class="caption">[京都為何那樣]我們從台北搬到京都了
+        <div class="info">Sam and Chill<br>
+            觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        <div class="coverContent">
+        <img class="cover" src="images/hq720 (2).webp">
+        <div class="youtuber">
+        <img class="profile" src="images/profile.jpg">
+        <div class="caption">100個你還不知道的曠野小知識!
+        <div class="info">Sam and Chill<br>
+            觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        <div class="coverContent">
+        <img class="cover" src="images/hq720 (3).webp">
+        <div class="youtuber">
+        <img class="profile" src="images/profile3.jpg">
+        <div class="caption">前端、後端、資料庫是什麼？
+        <div class="info">Sam and Chill<br>
+            觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        </div>
+
+
+        <div class="content1">
+        <div class="coverContent">
+            <img class="cover" src="images/hq720 (4).webp">
+            <div class="youtuber">
+            <img class="profile" src="images/profile4.jpg">
+            <div class="caption">iPhone 14 Pro 開箱！運動模式錄影
+                <div class="info">Sam and Chill<br>
+                觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        <div class="coverContent">
+            <img class="cover" src="images/hq720 (5).webp">
+            <div class="youtuber">
+            <img class="profile" src="images/profile4.jpg">
+            <div class="caption">AppWorks School 來解答！EP2（下集）
+            <div class="info">Sam and Chill<br>
+                觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+        <div class="coverContent">
+            <img class="cover" src="images/hq720 (6).webp">
+            <div class="youtuber">
+            <img class="profile" src="images/profile2.jpg">
+            <div class="caption">Python Full Course for Beginners
+            <div class="info">Sam and Chill<br>
+                觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+        <div class="coverContent">
+            <img class="cover" src="images/hqdefault.webp">
+            <div class="youtuber">
+            <img class="profile" src="images/profile3.jpg">
+            
+            <div class="caption">木吉他 早上最適合的音樂
+            <div class="info">Sam and Chill<br>
+                觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+            </div>
+
+
+            <div class="content1">
+            <div class="coverContent">
+                <img class="cover" src="images/hq721.webp">
+                <div class="youtuber">
+                <img class="profile" src="images/profile4.jpg">
+                <div class="caption">iPad Air 5 評測：買 Pro 還是 Air？
+                <div class="info">Sam and Chill<br>
+                    觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+
+                <div class="coverContent">
+                    <img class="cover" src="images/hq720 (7).webp">
+                    <div class="youtuber">
+                        <img class="profile" src="images/profile.jpg">
+                    <div class="caption">Zelda | Breath Of The Wild
+                    <div class="info">Sam and Chill<br>觀看次數：143萬次 ‧ 1 年前</div>
+                    </div></div></div>
+
+                <div class="coverContent">
+                    <img class="cover" src="images/hq720 (1).webp">
+                    <div class="youtuber">
+                    <img class="profile" src="images/profile2.jpg">
+                    <div class="caption">[京都為何那樣]我們從台北搬到京都了
+                    <div class="info">Sam and Chill<br>
+                            觀看次數：143萬次 ‧ 1 年前</div></div></div></div>
+                
+                <div class="coverContent">
+                    <img class="cover" src="images/hq720 (2).webp">
+                    <div class="youtuber">
+                    <img class="profile" src="images/profile.jpg">
+                    <div class="caption">100個你還不知道的曠野小知識!
+                    <div class="info">Sam and Chill<br>
+                            觀看次數：143萬次 ‧ 1 年前</div></div></div>
+                    </div>
+
+                </div>
+    
+    </div>
+</div>
+<script>
+    function showMsg(){
+    Swal.fire({
+        icon: 'warning',
+        title: '使用語音搜尋',
+        text: '如要使用語音搜尋，請前往瀏覽器設定並授予麥克風存取權'
+    })
+    // alert 中要使用 \n　才能換行
+}
+
+</script>
+</body>
+</html>
